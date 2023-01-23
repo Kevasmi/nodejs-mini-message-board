@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  form(method='POST' action='/new')
+    label(for='user') User:
+    input#user(type='text' name='user')
+    br
+    label(for='messageText') Message:
+    input#message(type='text' name='messageText')
+    br
+    input(type='submit' value='Submit')
